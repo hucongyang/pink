@@ -1,0 +1,98 @@
+/* -----------------------------------------------------------------------
+ 石榴裙系统主框架样式
+----------------------------------------------------------------------- */
+/*
+ * @auth stuart.shi
+ * @version v1.0
+ * @create 2013.10.14
+*/
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{ margin:0; padding:0; }
+body{ color:#000; background:#fff; font-size:12px; line-height:1.25; font-family:tahoma,arial,\5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\5b8b\4f53,sans-serif; }
+th,td{ text-align:left; vertical-align:top; }
+h1,h2,h3,h4,h5,h6{ font-size:1em; font-weight:normal; }
+p{ margin:0 0 1em 0; }
+blockquote{ margin:0 0 1em 0; }
+a{ color:#14647d; text-decoration:none; font-family:tahoma,arial,\5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\5b8b\4f53,sans-serif; _font-family:arial,\5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\5b8b\4f53,sans-serif; text-decoration: none; }
+a:hover{ text-decoration:underline; }
+img{ display:block; border:0; }
+li{ list-style:none; }
+ol{ padding:0 0 0 2em; }
+input,label,select,option,textarea,button,fieldset,legend{ font-size:1em; font-family:tahoma,arial,\5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\5b8b\4f53,sans-serif; _font-family:Arial,\5FAE\8F6F\96C5\9ED1,\9ED1\4F53,sans-serif; }
+input[type=text],textarea{ -webkit-appearance:none; -webkit-border-radius:0; outline:none; }
+input.text{ color:#444; border-color:#9f9f9f #dcdcdc #dcdcdc #9f9f9f; border-style:solid; border-width:1px; padding:3px 2px; height:14px; }
+input.radio,input.checkbox{ margin-right:2px; vertical-align:-2px; }
+input.radio,input.checkbox{ margin-left:-2px; }
+label.radio,label.checkbox{ margin-right:5px; }
+textarea{ border-color:#9f9f9f #dcdcdc #dcdcdc #9f9f9f; border-style:solid; border-width:1px; padding:1px; resize:none; }
+.fix{ display:inline-block; min-height:1%; }
+.fix:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.hide { display:none; }
+.clear{ clear:both; }
+.mw { width: 1000px; margin: 0px auto; }
+.space10{letter-spacing: 1px;}
+
+/*index*/
+.icon2{ background: url("../image/icon_2.png") no-repeat left top; }
+/*header*/
+.header{ }
+.header .top{ background: #000; width: 100%; border-bottom: 1px solid #2f2f2f; }
+.top .topitem { color:#fff; height: 28px; overflow: hidden; zoom:1; line-height: 28px; }
+.topitem a{ color:#fff; margin-right: 24px; }
+.top .logreg{ float: right; }
+.nav { padding:6px 0px 8px; border-bottom: 1px solid #ddd; height: 70px; zoom: 1; overflow: hidden; }
+.nav:after, .nav .menu:after{ clear: both; }
+.nav .logo{ width: 168px; height: 62px; overflow: hidden; display: inline-block; float: left; margin-top: 5px; }
+.nav .subtitle { float: left; font-weight: bold; font-size:14px; margin:30px 0px 0px 10px; }
+.nav .subtitle a { color:#000; }
+.nav .menu{ display: inline-block; height: auto; min-height: 1%; zoom:1; float: right; list-style: none; padding-top: 30px; }
+.nav .menu > li { float:left; margin:0px 25px 0px 30px; }
+.nav .menu > li a{ font-size: 16px; font-weight: bold; color:#2f2f2f; font-family: \5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\5b8b\4f53; display: inline-block; width:85px; height: 28px; text-align: center; padding:0px; line-height: 28px; }
+.nav .menu li a:hover, .nav .menu li a.active { border-bottom:3px solid #fa4393; text-decoration: none; }
+
+
+/**登录**/
+.loginbox{ padding:10px 0px 85px 0px; min-height: 1%; zoom:1; width: 1000px; display: inline-block; }
+.loginbox:after { clear:both; }
+.loginleft { float:left; margin-left:40px; }
+.loginbar { float:left; border-right:1px solid #aaaaaa; height: 230px; margin:90px 120px 0px 90px; }
+.loginform { margin-top: 50px; float:left; width:280px; border:1px solid #aaaaaa; display: inline-block; padding:30px; }
+.loginform label { line-height: 24px; display: inline-block; font-size:14px; }
+.loginform .ltxt { border:1px solid #aaaaaa; height:32px; line-height: 32px; width: 244px; margin-bottom:24px; padding: 0px 8px; }
+.loginform .ltxt.lsmall { width: 96px; display: inline-block; float:left; }
+.loginform img { float:left; margin:0px 12px; display: inline-block; width: 86px; height: 34px; }
+.loginform .ltip { float:left; width:36px; color:#b6b4b4; display: inline-block; cursor: pointer; }
+.loginform .lbtn { background: url("../image/lbtn.png") 0px 0px no-repeat; width:262px; height: 34px; overflow: hidden; display: inline-block; border:0px; color:#fff; font-size:14px; font-weight: bold; }
+
+
+/*底部*/
+.footer{ padding: 55px; background:#515050; clear:both; margin-top: 10px; }
+.footnav{ width: 544px; margin:0px auto; min-height: 30px; }
+.footnav:after{ clear: both; }
+.footnav li { width: 135px; text-align: center; float: left; font-size: 16px; font-weight: bold; display: inline-block; border-right: 1px solid #8d8b8b; }
+.footnav li.last { border-right:none; }
+.footnav a { color:#fff; }
+.footnav a:hover { text-decoration: none; }
+.footbox { border-top: 1px solid #8d8b8b; color: #fff; min-height: 30px; zoom:1; height: auto; line-height: 22px; width: 100%; display:inline-block; }
+.footbox:after{ clear: both; }
+.footbox h2 { font-size: 14px; font-weight: bold; line-height:40px; }
+.footbox .about, .footbox .weibo, .footbox .contact { float:left; }
+.footbox .about { width: 260px; }
+.footbox .contact { width: 170px; float: right; }
+.footbox .contact p{ padding: 0px; margin:0px; }
+.footbox .weibo { padding: 25px 0px 0px 130px; }
+.footbox .weibo .addweibo { width: 81px; height: 30px; margin-top:18px; display: block; background-position:-2px -165px; }
+
+/*二维码*/
+.qrbox { width: 100px; position: fixed; _position: absolute; height: 265px; min-height: 100px; margin-left: 5px; left:100px; bottom:0px; overflow: hidden; z-index:10; }
+a.jybtn { display: inline-block; width: 100px; height: 29px; overflow: hidden; background-position: 0px 0px; }
+.kefu { width: 100px; height: 30px; margin-top: 2px; overflow: hidden; background-position: 0px -30px; }
+.kefunum { width: 98px; height: 28px; overflow: hidden; border-left:1px solid #cfcfcf; border-right:1px solid #cfcfcf; color:#f99b36; text-align: center; font-size: 14px;}
+.qrcode{ width: 98px; border: 1px solid #cfcfcf; padding: 10px 0px; text-align: center; color:#a2a2a2; background: #fff; margin-top: -1px; }
+.qrcode img { text-align: center; width: 80px; height: 80px; margin: 0px 0px 5px 8px; }
+.qrbox .addweibo { width: 81px; height: 30px; margin-top:8px; display: block; background-position:-2px -165px; }
+
+/**主体内容wrapper**/
+#mainContent { margin-top: 10px; width:788px; float:left; display: inline-block; min-height: 600px; border:1px solid #ccc; position: relative;}
+#mainContent.noborder{border:0px;}
+#mainContent:after{ clear:both; }
